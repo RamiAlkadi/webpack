@@ -3,28 +3,17 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Calculator</title>
-		<script src="calculate.js"></script>
-		<script src="add.js"></script>
-		<script src="divide.js"></script>
-		<script src="multiply.js"></script>
-		<script src="substract.js"></script>
+		<!--<script src="calculate.js"></script>-->
+		<!--<script src="add.js"></script>-->
+		<!--<script src="divide.js"></script>-->
+		<!--<script src="multiply.js"></script>-->
+		<!--<script src="substract.js"></script>-->
 		<script type="module">
-            import {add} from "./add";
-
+			import {calculate} from "./calculate";
 
             function actie(el) {
 				const uitkomst = calculate(document.getElementById('a').value, document.getElementById('b').value, el.value);
 				document.getElementById('result').innerHTML = uitkomst;
-                import {add} from "./add";
-                import {divide} from "./divide";
-                import{substract} from "./substract";
-                import {multiply} from "./multiply";
-
-
-                console.log(add());
-				console.log(divide());
-                console.log(substract());
-                console.log(multiply());
 			}
 		</script>
 	</head>

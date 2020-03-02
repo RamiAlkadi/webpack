@@ -1,7 +1,12 @@
+import {add} from "./add";
+import {divide} from "./divide";
+import{substract} from "./substract";
+import {multiply} from "./multiply";
+
 /* Delen van twee waarden*/
 function calculate(a, b, operator) {
     "use strict";
-	var c = 0;
+	let c = 0;
     switch (operator) {
 		case "+":
 			c = add(a, b);
